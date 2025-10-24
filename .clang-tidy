@@ -1,0 +1,27 @@
+---
+Checks: >
+  readability-identifier-naming*,
+  performance-move-const-arg,
+  performance-for-range-copy
+
+WarningsAsErrors: "*"
+
+CheckOptions:
+  readability-identifier-naming.MacroDefinitionCase: UPPER_CASE
+  readability-identifier-naming.ClassCase: CamelCase
+  readability-identifier-naming.ClassConstantCase: CamelCase
+  readability-identifier-naming.ClassMemberCase: camelBack
+  readability-identifier-naming.StructCase: CamelCase
+  readability-identifier-naming.PublicMemberCase: camelBack
+  readability-identifier-naming.ProtectedMemberCase: camelBack
+  readability-identifier-naming.PrivateMemberCase: camelBack
+  readability-identifier-naming.PublicMethodCase: CamelCase
+  readability-identifier-naming.ProtectedMethodCase: camelBack
+  readability-identifier-naming.PrivateMethodCase: camelBack
+  readability-identifier-naming.EnumCase: CamelCase
+  readability-identifier-naming.EnumConstantCase: CamelCase
+  readability-identifier-naming.NamespaceCase: CamelCase
+  readability-identifier-naming.VariableCase: camelBack
+  readability-identifier-naming.ParameterCase: camelBack
+  readability-identifier-naming.ParameterPackCase: camelBack
+  readability-identifier-naming.PointerParameterCase: camelBack
