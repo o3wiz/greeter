@@ -1,4 +1,4 @@
-add_library(greeter)
+add_library(greeter STATIC)
 add_library(greeter::greeter ALIAS greeter)
 
 target_sources(greeter

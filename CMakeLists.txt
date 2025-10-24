@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.30)
 
 project(Greeter
     LANGUAGES CXX
-    VERSION 1.0.2
+    VERSION 1.0.3
 )
 
 add_subdirectory("greeter")
