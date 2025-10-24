@@ -8,5 +8,6 @@ project(Greeter
 add_subdirectory("greeter")
 
 install(TARGETS greeter EXPORT greeterTargets FILE_SET greeterHeaders)
-install(EXPORT greeterTargets NAMESPACE greeter:: DESTINATION "share/cmake/greeter")
-install(FILES "cmake/greeterConfig.cmake" DESTINATION "share/cmake/greeter")
+set(DEST_DIR "share/greeter")
+install(EXPORT greeterTargets NAMESPACE greeter:: DESTINATION "${DEST_DIR}")
+install(FILES "cmake/greeterConfig.cmake" DESTINATION "${DEST_DIR}")
