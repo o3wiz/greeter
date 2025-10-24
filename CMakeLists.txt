@@ -1,8 +1,12 @@
 cmake_minimum_required(VERSION 3.30)
 
-project(Temp LANGUAGES CXX)
+project(Greeter
+    LANGUAGES CXX
+    VERSION 1.0.0
+)
 
-set(CMAKE_CXX_STANDARD 23)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+add_subdirectory("greeter")
 
-add_executable(main "Main.cpp")
+install(TARGETS greeter EXPORT greeterTargets FILE_SET greeterHeaders)
+install(EXPORT greeterTargets NAMESPACE greeter:: DESTINATION "share/cmake/greeter")
+install(FILES "cmake/greeterConfig.cmake" DESTINATION "share/cmake/greeter")
