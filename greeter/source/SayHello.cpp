@@ -1,8 +1,8 @@
 #include "greeter/SayHello.hpp"
 
-#include <iostream>
+#include <fmt/core.h>
 
 void Greeter::SayHello(const std::string_view name)
 {
-    std::cout << "Hello, " << name << "!" << std::endl;
+    fmt::println("Hello, {}!", name);
 }

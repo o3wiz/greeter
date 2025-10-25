@@ -10,6 +10,7 @@
       "name": "default",
       "generator": "Ninja Multi-Config",
       "binaryDir": "build",
+      "toolchainFile": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
       "cacheVariables": {
         "CMAKE_EXPORT_COMPILE_COMMANDS": true,
         "CMAKE_CONFIGURATION_TYPES": "Debug;Release",

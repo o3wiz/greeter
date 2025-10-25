@@ -16,3 +16,6 @@ target_sources(greeter
 )
 
 target_compile_features(greeter PRIVATE cxx_std_17)
+
+find_package(fmt CONFIG REQUIRED)
+target_link_libraries(greeter PRIVATE fmt::fmt)
